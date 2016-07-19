@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Data - Referees</title>
+
+
+<script src="js/jquery-1.11.0.min.js"></script> 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+
+<script src="js/jquery.ssd-vertical-navigation.min.js"></script>
+<script src="js/app.js"></script>
+
+<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="js/slick.js"></script>
+
+
+</head>
+
+<body>
+<div id="addtaskPopup">
+	<div class="xsf-loading-wrapper4">
+	<div class="xsf-loading-header2">
+	<div class="xsf-loading-header-text">Referee Info</div>
+	</div>
+	<div class="xsf-loading-content4">
+			<div style="margin-left: 40px; float: left;">
+				<div class="labelContainer3">Name</div>
+				<div><input class="textBoxAdd3" type="text"/></div>
+				<div class="labelContainer2">Referee ID</div>
+				<div><input class="textBoxAdd3" type="text"/></div>
+				<div class="labelContainer2">Date of Birth</div>
+				<div><input class="textBoxAdd3" type="text"/></div>
+				<div style="height: 100px; width: 300px; margin-top: 30px;">
+				<div class="addnewBtn" id="createBtn"><a href="#"><button class="loginBtn">ADD REFEREE</button></a></div>
+				<div class="addnewBtn" id="closeBtn"><button class="cancelBtn"><a href="#">CANCEL</a></button></div>
+				</div>
+			
+			</div>
+			
+		
+	</div>
+	</div>
+</div>
+<div class="mainMenu">
+	<div class="wrapper">
+		<div class="mainLogo"></div>
+		<div id="contentWrapper">
+		  <div id="contentLeft">
+			<ul id="leftNavigation">
+			  <li> <a href="#"><i class="fa fa-coffee leftNavIcon"></i>Home<span class="dcjq-icon"></span></a>
+				<ul>
+				  <li> <a href="dashboard.html"><i class="fa fa-angle-right leftNavIcon"></i> Dashboard </a> </li>
+				  <li> <a href="todo.html"><i class="fa fa-angle-right leftNavIcon"></i> To do </a> </li>
+				</ul>
+			  </li>
+			  <li> <a href="#"><i class="fa fa-flask leftNavIcon"></i>Customers<span class="dcjq-icon"></span></a>
+				<ul>
+				  <li> <a href="search.html"><i class="fa fa-angle-right leftNavIcon"></i> Search</a> </li>
+				  <li> <a href="newcustomer.html"><i class="fa fa-angle-right leftNavIcon"></i>New Customer</a> </li>
+				  <li> <a href="payments.html"><i class="fa fa-angle-right leftNavIcon"></i>Payments</a> </li>
+				  <li> <a href="comments.html"><i class="fa fa-angle-right leftNavIcon"></i>Comments</a> </li>
+				  <li> <a href="manuals.html"><i class="fa fa-angle-right leftNavIcon"></i>Manuals</a> </li>
+				</ul>
+			  </li>
+			  <li> <a href="#"><i class="fa fa-truck leftNavIcon"></i>Employees<span class="dcjq-icon"></span></a>
+				<ul>
+				  <li> <a href="search_emp.html"><i class="fa fa-angle-right leftNavIcon"></i>Search</a> </li>
+				  <li> <a href="newemployee.html"><i class="fa fa-angle-right leftNavIcon"></i>New Employee</a> </li>
+				</ul>
+			  </li>
+			  <li> <a href="player.html"><i class="fa fa-envelope-o leftNavIcon"></i>Players<span class="dcjq-icon"></span></a>
+				<ul>
+				  <li> <a href="injuries.html"><i class="fa fa-angle-right leftNavIcon"></i>Injuries</a> </li>
+				  <li> <a href="suspensions.html"><i class="fa fa-angle-right leftNavIcon"></i>Suspensions</a> </li>
+				  <li> <a href="transferrumours.html"><i class="fa fa-angle-right leftNavIcon"></i>Transfer Rumours</a> </li>
+				  <li> <a href="transfers.html"><i class="fa fa-angle-right leftNavIcon"></i>Transfers</a> </li>
+				</ul>
+			  </li>
+			  <li> <a href="#"><i class="fa fa-envelope-o leftNavIcon"></i>Matches<span class="dcjq-icon"></span></a>
+				<ul>
+				  <li> <a href="notstarted.html"><i class="fa fa-angle-right leftNavIcon"></i>Not Started</a> </li>
+				  <li> <a href="finished.html"><i class="fa fa-angle-right leftNavIcon"></i>Finished</a> </li>
+				  <li> <a href="creatematches.html"><i class="fa fa-angle-right leftNavIcon"></i>Create Matches</a> </li>
+				  <li> <a href="livescore.html"><i class="fa fa-angle-right leftNavIcon"></i>Live Score</a> </li>
+				</ul>
+			  </li>
+			  <li> <a href="#"><i class="fa fa-envelope-o leftNavIcon"></i>Clubs<span class="dcjq-icon"></span></a>
+				<ul>
+				  <li> <a href="clubs_active.html"><i class="fa fa-angle-right leftNavIcon"></i>Active</a> </li>
+				  <li> <a href="clubs_inactive.html"><i class="fa fa-angle-right leftNavIcon"></i>Not Active</a> </li>
+				  <li> <a href="clubs_search.html"><i class="fa fa-angle-right leftNavIcon"></i>Search</a> </li>
+				</ul>
+			  </li>
+			  <li> <a href="#"><i class="fa fa-envelope-o leftNavIcon"></i>Competitions<span class="dcjq-icon"></span></a>
+				<ul>
+				  <li> <a href="competitions_active.html"><i class="fa fa-angle-right leftNavIcon"></i>Active</a> </li>
+				  <li> <a href="competitions_inactive.html"><i class="fa fa-angle-right leftNavIcon"></i>Non Active</a> </li>
+				</ul>
+			  </li>
+			  <li> <a href="#"><i class="fa fa-envelope-o leftNavIcon"></i>Countries<span class="dcjq-icon"></span></a>
+				<ul>
+				  <li> <a href="countries_active.html"><i class="fa fa-angle-right leftNavIcon"></i>Active</a> </li>
+				  <li> <a href="countries_inactive.html"><i class="fa fa-angle-right leftNavIcon"></i>Non Active</a> </li>
+				</ul>
+			  </li>
+			  <li class="active"> <a href="#"><i class="fa fa-envelope-o leftNavIcon"></i>Data<span class="dcjq-icon"></span></a>
+				<ul>
+				  <li> <a href="internalsources.html"><i class="fa fa-angle-right leftNavIcon"></i>Internal Sources</a> </li>
+				  <li> <a href="injurytypes.html"><i class="fa fa-angle-right leftNavIcon"></i>Injury Types</a> </li>
+				  <li> <a href="injuryreturn.html"><i class="fa fa-angle-right leftNavIcon"></i>Injury Return</a> </li>
+				  <li> <a href="suspensioncharges.html"><i class="fa fa-angle-right leftNavIcon"></i>Suspension Charges</a> </li>
+				  <li> <a href="transferrumourprobability.html"><i class="fa fa-angle-right leftNavIcon"></i>Transfer Rumour Probability</a> </li>
+				  <li> <a href="transfer_transferrumour_resources.html"><i class="fa fa-angle-right leftNavIcon"></i>Transfer & Transfer Rumour Sources</a> </li>
+				  <li class="active"> <a href="referees.html"><i class="fa fa-angle-right leftNavIcon"></i>Referees</a> </li>
+				  <li> <a href="stadium.html"><i class="fa fa-angle-right leftNavIcon"></i>Stadium</a> </li>
+				  <li> <a href="manager.html"><i class="fa fa-angle-right leftNavIcon"></i>Manager</a> </li>
+				  <li> <a href="boots.html"><i class="fa fa-angle-right leftNavIcon"></i>
+				  Boots</a> </li>
+				</ul>
+			  </li>
+			</ul>
+		  </div>
+		</div>
+	</div>
+	
+
+	
+</div>
+
+<div class="mainContainer">
+	<div class="mainHeader">
+		<div class="profileContainer">
+			<div class="dropdown">
+				<img src="images/pic.png" alt="profilepic" title="picture"
+				style="border-radius: 35px;" class="profilePic"/>Che Otrera
+				<ul class="dropdown-menu">
+					<li><a href="#">Switch User</a></li>
+					<li><a href="#">Log out</a></li>
+				</ul>
+				<div class="arrow-down"></div>
+			</div>
+		</div>
+	</div>
+	
+	
+</div>
+
+
+
+<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+<link rel="stylesheet" type="text/css" href="css/app.css"/>
+<link rel="stylesheet" type="text/css" href="css/main.css"/>
+<link rel="stylesheet" type="text/css" href="css/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="css/slick/slick-theme.css"/>
+
+
+<script type="text/javascript" src="js/functions.js"></script>
+
+</body>
+</html>
